@@ -8,6 +8,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "react-app",
   ],
+
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
