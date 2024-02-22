@@ -14,12 +14,12 @@ import { useEffect, useState } from "react";
 import { useCities } from "../context/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 export default function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
+
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
@@ -32,6 +32,7 @@ export default function Map() {
     },
     [mapLat, mapLng]
   );
+
   useEffect(
     function () {
       if (geolocationPosition)
@@ -69,6 +70,7 @@ export default function Map() {
           </Marker>
         ))}
         <ChangeCenter position={mapPosition} />
+        <DetectClick />
       </MapContainer>
     </div>
   );
