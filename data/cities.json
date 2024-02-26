@@ -47,6 +47,30 @@
         "lat": "40.013022254814686",
         "lng": "-0.07003784179687501"
       }
+    },
+    {
+      "id": "e737",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-26T11:26:12.794Z",
+      "notes": "asd",
+      "position": {
+        "lat": "39.996585880995035",
+        "lng": "-0.09166717529296876"
+      }
+    },
+    {
+      "id": "c8f8",
+      "cityName": "Vilanova d'Alcolea",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-02-26T11:26:22.220Z",
+      "notes": "we",
+      "position": {
+        "lat": "40.199854889057676",
+        "lng": "0.1023101806640625"
+      }
     }
   ]
 }
