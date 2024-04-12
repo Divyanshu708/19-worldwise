@@ -1,4 +1,4 @@
-# Using this react projects any user can mark the location anywhere in the world map and can add info like when they visited the place, place name, notes about the place, date.etc 
+### Using this react projects any user can mark the location anywhere in the world map and can add info like when they visited the place, place name, notes about the place, date.etc 
 
 # How to install:
 
